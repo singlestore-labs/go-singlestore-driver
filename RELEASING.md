@@ -68,3 +68,15 @@ go get github.com/singlestore-labs/go-singlestore-driver@vX.Y.Z
 ## Background: legacy `-pN` tags
 
 Older tags like `v1.9.3-p0` used a fork-specific `-pN` suffix. Do **not** use that pattern for new production releases.
+
+## Driver-Server Version Compatibility Matrix
+
+After each release, add a row for the new version. While CI has no pinned engine matrix, take the list from the [EOL policy](https://docs.singlestore.com/db/v9.1/support/singlestore-software-end-of-life-eol-policy/) as of the new tag's date.
+
+| Driver Version | Release date | Go Version | Supported engine versions |
+| -------------- | ------------ | ---------- | ------------------------- |
+| 2.0.1          | 2026-06-08   | >= 1.24.0  | 8.9, 9.0, 9.1 RC          |
+| 2.0.0          | 2026-06-03   | >= 1.24.0  | 8.9, 9.0, 9.1 RC          |
+| 1.9.3-p0       | 2026-04-03   | >= 1.21.0  | 8.7, 8.9, 9.0, 9.1 RC     |
+| 1.9.2-p2       | 2026-02-11   | >= 1.21.0  | 8.7, 8.9, 9.0             |
+| 1.9.2-p1       | 2026-02-03   | >= 1.21.0  | 8.7, 8.9, 9.0             |
